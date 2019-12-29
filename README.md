@@ -1,0 +1,1 @@
+Collection of different small projects and challenges that are completed on the variety of dev courses on the interwebs, including codecademy and freeCodeCamp.
