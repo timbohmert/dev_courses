@@ -60,7 +60,3 @@ def get_attractions_for_traveler(traveler):
             interests_string += ('and ' + traveler_attractions[1] + ".")
         else: interests_string += (traveler_attractions[i] + ", ")
     return interests_string
-
-test = get_attractions_for_traveler(test_travel)
-
-print(test)
