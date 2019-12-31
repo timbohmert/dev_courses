@@ -1,0 +1,1 @@
+v1.0: In this program, I created functions on script.js. This was from Codecademy with game.js, index.html, and style.css pre-loaded.
