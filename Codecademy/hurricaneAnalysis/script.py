@@ -70,7 +70,7 @@ def year_dict(dict):
     hurricane_years = {}
     
     #for loop that checks if year in hurricane_years, and adds data 
-    for name, data in dict.items():
+    for data in dict.values():
         for year, lst in hurricane_years.items():
             if data['Year'] == year:
                 lst.append(data)
@@ -86,7 +86,7 @@ def year_dict(dict):
 def area_count(dict):
     affected_count = {}
 
-    for name, data in dict.items():
+    for data in dict.values():
         for area in data['Areas Affected']:
             if area not in affected_count:
                 affected_count[area] = 1
@@ -132,7 +132,7 @@ def mortality_rating(dict):
     rating_dict = {}
 
     #for loop that iterates through list of hurricanes and related data
-    for name, data in dict.items():
+    for data in dict.values():
 
         #for loop that iterates through list of items in mortality scale and associated death count
         for rating, deaths in mortality_scale.items():
@@ -185,7 +185,7 @@ def damage_rating(dict):
     rating_dict = {}
 
     #for loop that iterates through dict of hurricanes with temp variable for cane name and associated data
-    for name, data in dict.items():
+    for data in dict.values():
 
         #for loop that iterates through dict of damage_scale
         for rating, damage in damage_scale.items():
