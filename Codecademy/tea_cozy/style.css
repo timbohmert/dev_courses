@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 69px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#logo {
+    height: 50px;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#panel {
+    position: absolute;
+    display: inline-flex;
+    right: 10px;
+}
+
+.page {
+
+}
+
+#panel a {
+    text-decoration: underline;
+    color: seashell;
+    margin: 0px 20px;
+}
+
+/*BODY*/
+
+main {
+    margin-top: 69px;
+}
+
+.title {
+    margin: 15px auto;
+}
+
+/*MISSION*/
+
+#mission {
+    margin-top: 69px;
+    background-image: url(./media/mission_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.mission.title {
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+}
+
+#mission-statement h2 {
+    margin: 20px auto;
+}
+
+#mission-statement h4 {
+    margin: 20px auto;
+}
+
+/*TEA-OF-MONTH*/
+
+#tea-of-month {
+    margin: 100px auto;
+}
+
+#tea-options {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.option {
+    width: 300px;
+    max-height: 200px;
+    margin: 40px 25px;
+
+}
+
+.option img {
+    height: 100%;
+}
+
+.option h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*LOCATIONS*/
+
+#location {
+    background-image: url(./media/locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.locations.title {
+    margin: 0px;
+}    
+.locations.title h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.locations.sites {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site {
+    background-color: black;
+    opacity: 1;
+    width: 300px;
+    margin: 0px 20px;
+    padding: 20px 0px;
+}
+
+.site h4 {
+    font-weight: 300;
+}
+
+/*FOOTER*/
+
+#copyright {
+    width: inline-block;
+    margin: 20px 20px;
+}
+
+#copyright h5 {
+    text-align: left;
+}
