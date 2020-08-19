@@ -61,6 +61,26 @@ const pAequorFactory = (num) => {
                 }
             }); 
             return count / this.dna.length > 0.59;
+        },
+
+        //method that creates compliment strand
+        complimentStrand() {
+            let compliment_strand = []
+            this.dna.forEach (x => {
+                if (x === 'A') {
+                    compliment_strand.push('T');
+                }
+                else if (x === 'T') {
+                    compliment_strand.push('A');
+                }
+                else if (x === 'G') {
+                    compliment_strand.push('C');
+                }
+                else {
+                    compliment_strand.push('G');
+                } 
+            });
+            return compliment_strand;
         }
     }   
 }
